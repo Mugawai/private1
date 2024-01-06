@@ -2,9 +2,9 @@ self.addEventListener('install', event => {
     event.waitUntil(
        caches.open('cache-v1').then(cache => {
          return cache.addAll([
-           '/',
-           '/manifest.json',
-           '/assets/images/awal.webp',
+           './',
+           './manifest.json',
+           './assets/images/awal.webp',
            // tambahkan file lain yang perlu di-cache disini
          ]);
        })
